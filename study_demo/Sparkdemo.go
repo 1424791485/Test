@@ -47,6 +47,8 @@ func main() {
 	go func() {
 
 		data := genParams1(appid, "你是谁，可以做什么？")
+		message := "测试"
+		fmt.Println(message)
 		conn.WriteJSON(data)
 
 	}()
